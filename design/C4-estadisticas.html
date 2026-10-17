@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>C4 — Estadísticas · Móvil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="frame frame--movil">
+  <div class="mobile-screen">
+
+    <div class="mobile-header">
+      <div class="mobile-header__eyebrow">Estadísticas</div>
+      <div class="mobile-header__row">
+        <div class="mobile-header__date">Viernes 28 de agosto</div>
+      </div>
+    </div>
+
+    <div class="chip-row">
+      <span class="chip chip--active">Diario</span>
+      <span class="chip">Semanal</span>
+      <span class="chip">Mensual</span>
+    </div>
+
+    <div style="flex:1; overflow-y:auto; padding: 0 20px 100px; display:flex; flex-direction:column; gap:20px;">
+
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div class="stat-card stat-card--mobile">
+          <span class="stat-card__label">Ingresos del día</span>
+          <span class="stat-card__value">$51<sup>.50</sup></span>
+        </div>
+        <div class="stat-card stat-card--mobile">
+          <span class="stat-card__label">Pedidos</span>
+          <span class="stat-card__value">9</span>
+        </div>
+        <div class="stat-card stat-card--mobile">
+          <span class="stat-card__label">Ticket promedio</span>
+          <span class="stat-card__value">$5<sup>.72</sup></span>
+        </div>
+      </div>
+
+      <div class="panel" style="padding:16px;">
+        <div style="font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--color-cafe-claro); margin-bottom:12px;">Ingresos por turno</div>
+        <div class="chart-bars" style="height:150px;">
+          <div class="chart-bars__col">
+            <span class="chart-bars__value">$32<sup>.50</sup></span>
+            <div class="chart-bars__fill chart-bars__fill--active" style="height:150px;"></div>
+            <span class="chart-bars__label">Mañana</span>
+          </div>
+          <div class="chart-bars__col">
+            <span class="chart-bars__value">$19<sup>.00</sup></span>
+            <div class="chart-bars__fill" style="height:88px;"></div>
+            <span class="chart-bars__label">Noche</span>
+          </div>
+        </div>
+        <div style="margin-top:10px; font-size:11px; color:var(--color-cafe-claro);">Mañana: 6 pedidos · Noche: 3 pedidos</div>
+      </div>
+
+      <div class="panel" style="padding:16px;">
+        <div style="font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--color-cafe-claro); margin-bottom:4px;">Platillos más vendidos hoy</div>
+        <div class="rank-list">
+          <div class="rank-item">
+            <span class="rank-item__pos">1</span>
+            <span class="rank-item__name">Pollo empanizado</span>
+            <span class="rank-item__count">3</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-item__pos">2</span>
+            <span class="rank-item__name">Sopa de res</span>
+            <span class="rank-item__count">2</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-item__pos">3</span>
+            <span class="rank-item__name">Pechuga</span>
+            <span class="rank-item__count">2</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-item__pos">4</span>
+            <span class="rank-item__name">Lasaña de pollo</span>
+            <span class="rank-item__count">2</span>
+          </div>
+          <div class="rank-item">
+            <span class="rank-item__pos">5</span>
+            <span class="rank-item__name">Chilaquilas de pollo</span>
+            <span class="rank-item__count">2</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <nav class="tabbar">
+      <a class="tabbar__item" href="C2-pedidos.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6"/><path d="M9 16h6"/></svg>
+        Pedidos
+      </a>
+      <a class="tabbar__item tabbar__item--active" href="C4-estadisticas.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        Estadísticas
+      </a>
+      <a class="tabbar__item" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Perfil
+      </a>
+    </nav>
+
+  </div>
+</div>
+</body>
+</html>
